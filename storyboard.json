@@ -1,0 +1,409 @@
+{
+ "version": 1,
+ "title": {
+  "native": "የጀበናው መጀመሪያ ጭስ",
+  "en": "The First Smoke of the Jebena"
+ },
+ "language": {
+  "code": "am",
+  "name": "Amharic"
+ },
+ "logline": "Before the city wakes, an Ethiopian grandmother's dawn coffee ritual becomes a silent prayer and living thread connecting her family across distance and time.",
+ "audience": "Ethiopian young adults and parents, in Addis Ababa and in the diaspora, watching on mobile phones (9:16) and desktops (16:9).",
+ "intent": "A quiet ache of gratitude and warmth: the love of home isn't loud, it lives in small daily rituals done before anyone else is awake.",
+ "duration_s": {
+  "min": 60,
+  "max": 90
+ },
+ "style_block": "Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home.",
+ "characters": [
+  {
+   "id": "emama",
+   "description": "Emama Almaz: an Ethiopian grandmother in her late sixties, warm brown skin, oval face, soft deep smile lines, calm dark eyes, silver-grey hair parted in the centre and covered by a white cotton netela shawl with a thin woven green, gold and red border, long white handwoven habesha kemis dress, small silver stud earrings.",
+   "real_person": false
+  }
+ ],
+ "references": [
+  {
+   "id": "emama_sheet",
+   "kind": "character",
+   "seed": 4101,
+   "characters": [
+    "emama"
+   ],
+   "prompt": "Character reference sheet on a plain warm background: the same woman three times, front view, three-quarter view and a calm close-up of her face."
+  },
+  {
+   "id": "coffee_set",
+   "kind": "object",
+   "seed": 4102,
+   "references": [
+    "emama_sheet"
+   ],
+   "prompt": "Object reference sheet on a plain warm background, no people: round black clay jebena with long neck and straw stopper, small white handleless cini cups, clay charcoal brazier, round dark iron roasting pan, wooden mortar and pestle."
+  },
+  {
+   "id": "kitchen",
+   "kind": "place",
+   "seed": 4103,
+   "references": [
+    "emama_sheet"
+   ],
+   "prompt": "Empty location reference, no people: small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor, clay brazier in the middle, dim blue light before dawn."
+  }
+ ],
+ "providers": {
+  "tts": {
+   "model": "gemini-3.8-flash-tts",
+   "voice": "Sulafat",
+   "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone"
+  },
+  "image": {
+   "model": "@cf/black-forest-labs/flux-2-klein-4b",
+   "steps": 4
+  },
+  "video": {
+   "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+   "long_side": 832,
+   "short_side": 480,
+   "num_frames": 121,
+   "fps": 24,
+   "steps": 30,
+   "guidance": 5.0,
+   "flow_shift": 3.0
+  },
+  "music": {
+   "model": "acestep-v15-turbo",
+   "steps": 8
+  }
+ },
+ "shots": [
+  {
+   "id": "s01_dawn_city",
+   "reason": "Puts us in a place and hour, and makes the one lit window the question the film answers.",
+   "shot_size": "extreme_wide",
+   "min_duration_s": 7,
+   "keyframe": {
+    "prompt": "Extreme wide view before dawn over a quiet Addis Ababa hillside neighbourhood of small tin-roofed houses, deep blue light, soft mist, a single warm amber window glowing in the centre.",
+    "seed": 7001,
+    "references": [
+     "kitchen"
+    ],
+    "characters": []
+   },
+   "motion": {
+    "backend": "kenburns",
+    "prompt": "Mist drifts slowly, slow push in.",
+    "seed": 8001,
+    "kenburns": "push_in",
+    "why_backend": "Tiny houses warp in generated motion; a slow push is enough."
+   },
+   "narration": {
+    "text": "ከተማዋ ገና ሳትነቃ፣ ጨለማው ገና ሳይገፈፍ፣ በቤታችን ውስጥ አንድ ብርሃን ቀድሞ ይበራል።",
+    "subtitle_en": "Before the city wakes, before the darkness lifts, one light turns on first in our home."
+   }
+  },
+  {
+   "id": "s02_fanning_embers",
+   "reason": "Answers the window: introduces her through what she does, not through a portrait.",
+   "shot_size": "medium",
+   "min_duration_s": 8,
+   "keyframe": {
+    "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor, still blue before dawn. She kneels beside a small clay charcoal brazier and fans the glowing embers with a woven straw fan, face lit orange from below.",
+    "seed": 7002,
+    "references": [
+     "emama_sheet",
+     "kitchen",
+     "coffee_set"
+    ],
+    "characters": [
+     "emama"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "She slowly fans the embers, the glow pulses gently, sparks drift up, fixed camera.",
+    "seed": 8002,
+    "kenburns": "push_in",
+    "why_backend": "One slow repeated hand movement."
+   },
+   "narration": {
+    "text": "እማማ ናቸው። ፍሙን እያራገቡ፣ ቀኑን በጸሎትና በቡና ሽታ ይቀበሉታል።",
+    "subtitle_en": "It is Emama. Fanning the embers, she welcomes the day with prayer and the scent of coffee."
+   }
+  },
+  {
+   "id": "s03_roasting_beans",
+   "reason": "The first smoke of the title. Smell becomes visible.",
+   "shot_size": "insert",
+   "min_duration_s": 7,
+   "keyframe": {
+    "prompt": "Close-up of coffee beans in a round dark iron roasting pan over glowing charcoal, some still green, most turning glossy brown, thin smoke curling up, lit only by ember glow.",
+    "seed": 7003,
+    "references": [
+     "coffee_set"
+    ],
+    "characters": []
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Thin smoke curls slowly upward, embers flicker softly, fixed camera.",
+    "seed": 8003,
+    "kenburns": "pan_right",
+    "why_backend": "Smoke is what the model animates well."
+   },
+   "narration": {
+    "text": "አረንጓዴው ቡና በብረት መቁያ ላይ ሲታመስ፣ የቤቱ ዝምታ በሚጣፍጥ መዓዛ ይሞላል።",
+    "subtitle_en": "As the green beans roast on the iron pan, the silence of the house fills with sweet aroma."
+   }
+  },
+  {
+   "id": "s04_wafting_smoke",
+   "reason": "The prayer. Turns a chore into an act of love and first names the children.",
+   "shot_size": "medium_close_up",
+   "min_duration_s": 7,
+   "keyframe": {
+    "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. She holds a smoking roasting pan low in front of her with one hand and draws the smoke toward her face with the other, eyes closed in peace, dim blue window behind her.",
+    "seed": 7004,
+    "references": [
+     "emama_sheet",
+     "kitchen",
+     "coffee_set"
+    ],
+    "characters": [
+     "emama"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Smoke drifts toward her face, she breathes in slowly with eyes closed, fixed camera.",
+    "seed": 8004,
+    "kenburns": "push_in",
+    "why_backend": "Eyes closed and almost still keeps the face stable."
+   },
+   "narration": {
+    "text": "ጭሱን ወደ ራሳቸው እየሳቡ፣ «እግዚአብሔር ይመስገን» ይላሉ—ለነጋው ቀን፣ ለልጆቻቸው ጤና።",
+    "subtitle_en": "Drawing the smoke toward her, she whispers “Thank God”—for the new day, for her children's health."
+   }
+  },
+  {
+   "id": "s05_mortar",
+   "reason": "The sound children remember. Carries the film's rhythm.",
+   "shot_size": "insert",
+   "min_duration_s": 8,
+   "keyframe": {
+    "prompt": "Close-up of a worn wooden mortar filled with dark roasted coffee, a wooden pestle resting inside it held by two aged brown hands, fine dust in the air, pale blue first light just touching the rim.",
+    "seed": 7005,
+    "references": [
+     "coffee_set",
+     "kitchen"
+    ],
+    "characters": []
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "The pestle moves slowly up and down, fine dust floats, fixed camera.",
+    "seed": 8005,
+    "kenburns": "tilt_down",
+    "why_backend": "Simple vertical motion; falls back to a tilt if the hands deform."
+   },
+   "narration": {
+    "text": "የሙቀጫው ድምፅ የቤታችን የጠዋት ሰዓት ነው፤ ፍቅር በትዕግሥት ሲወቀጥ የሚሰማ ዜማ።",
+    "subtitle_en": "The rhythm of the mortar is our home's morning clock—the melody of love ground with patience."
+   }
+  },
+  {
+   "id": "s06_jebena_on_fire",
+   "reason": "The turn from blue to gold. Warmth arrives from outside to meet the warmth inside.",
+   "shot_size": "medium",
+   "min_duration_s": 8,
+   "keyframe": {
+    "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. A black clay jebena coffee pot sits on the glowing charcoal brazier, her hands just leaving its handle, the first golden sunrise rays break through the window and cross the room.",
+    "seed": 7006,
+    "references": [
+     "emama_sheet",
+     "kitchen",
+     "coffee_set"
+    ],
+    "characters": [
+     "emama"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Golden light slowly brightens across the room, faint steam rises, fixed camera.",
+    "seed": 8006,
+    "kenburns": "pan_left",
+    "why_backend": "Light and steam only."
+   },
+   "narration": {
+    "text": "ጀበናው እሳቱ ላይ ሲጣድ፣ የጠዋት ፀሐይ በመስኮቱ በኩል ቀስ ብላ ትገባለች።",
+    "subtitle_en": "As the jebena settles onto the fire, the morning sun slips quietly through the window."
+   }
+  },
+  {
+   "id": "s07_first_abol",
+   "reason": "The heart: more cups than people. Absence shown as objects, not as tears.",
+   "shot_size": "close_up",
+   "min_duration_s": 8,
+   "keyframe": {
+    "prompt": "Close-up of a black clay jebena pouring a thin steady stream of dark coffee into one small white handleless cini cup on a low wooden tray with several other cini cups, steam rising, golden morning light.",
+    "seed": 7007,
+    "references": [
+     "coffee_set"
+    ],
+    "characters": []
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "The thin stream of coffee pours steadily, steam rises, fixed camera.",
+    "seed": 8007,
+    "kenburns": "push_in",
+    "why_backend": "Fluid motion is the riskiest shot; three attempts, then push in."
+   },
+   "narration": {
+    "text": "የመጀመሪያው አቦል ሲቀዳ፣ ስኒዎቹ ይሞላሉ—አንዱ ለቤቱ፣ ሌሎቹ ግን በሩቅ ላሉ ልጆቿ።",
+    "subtitle_en": "When the first Abol is poured, the cups fill—one for the house, the rest for her children far away."
+   }
+  },
+  {
+   "id": "s08_cup_and_photo",
+   "reason": "Links cup and family in one frame, for viewers who are the ones far away.",
+   "shot_size": "insert",
+   "min_duration_s": 7,
+   "keyframe": {
+    "prompt": "Close-up of one steaming white cini cup on a wooden table, beside it an old wooden picture frame angled away and out of focus so no face can be read, warm golden light.",
+    "seed": 7008,
+    "references": [
+     "coffee_set",
+     "kitchen"
+    ],
+    "characters": []
+   },
+   "motion": {
+    "backend": "kenburns",
+    "prompt": "Steam rises gently.",
+    "seed": 8008,
+    "kenburns": "pull_out",
+    "why_backend": "Photo faces morph in generated motion."
+   },
+   "narration": {
+    "text": "ርቀት ቢለየንም፣ በዚህች አንድ ስኒ ቡና ውስጥ የእናት ፍቅር ሁሌም ያገናኘናል።",
+    "subtitle_en": "Though distance separates us, inside this single cup of coffee, a mother's love always unites us."
+   }
+  },
+  {
+   "id": "s09_emama_smile",
+   "reason": "She finally looks at us. The viewer becomes one of the children.",
+   "shot_size": "medium_close_up",
+   "min_duration_s": 8,
+   "keyframe": {
+    "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor full of golden morning light. She holds a warm cini cup in both hands and looks softly toward the camera with a gentle knowing smile.",
+    "seed": 7009,
+    "references": [
+     "emama_sheet",
+     "kitchen",
+     "coffee_set"
+    ],
+    "characters": [
+     "emama"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "She smiles slightly and blinks once, steam rises from the cup, fixed camera.",
+    "seed": 8009,
+    "kenburns": "push_in",
+    "why_backend": "Minimal face motion."
+   },
+   "narration": {
+    "text": "ቡናው ሲቀዘቅዝ ይታደሳል፤ የእናት ፍቅር ግን መቼም አይቀዘቅዝም።",
+    "subtitle_en": "Coffee can be warmed again when it cools; a mother's love never grows cold."
+   }
+  },
+  {
+   "id": "s10_last_steam",
+   "reason": "Her blessing over an empty room: the love stays after she leaves the frame.",
+   "shot_size": "wide",
+   "min_duration_s": 7,
+   "keyframe": {
+    "prompt": "Wide shot of a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor in full golden morning light, the black jebena on its brazier in the centre with steam rising, empty stool, small filled cups waiting on the tray, nobody in frame.",
+    "seed": 7010,
+    "references": [
+     "kitchen",
+     "coffee_set"
+    ],
+    "characters": []
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Steam rises slowly into the light, very slow pull back.",
+    "seed": 8010,
+    "kenburns": "pull_out",
+    "why_backend": "Steam only."
+   },
+   "narration": {
+    "text": "መልካም ቀን፣ ልጆቼ።",
+    "subtitle_en": "Have a blessed day, my children.",
+    "style": "an elderly mother speaking softly and tenderly to her own children, unhurried, smiling"
+   }
+  }
+ ],
+ "music": {
+  "cues": [
+   {
+    "id": "blue_hour",
+    "start_shot": "s01_dawn_city",
+    "purpose": "Quiet and sparse under the first six shots; leaves room for the voice.",
+    "caption": "Instrumental Ethiopian acoustic score, intimate and tender, solo masenqo playing sparse soft bowed phrases, gentle krar plucking, pentatonic tizita feeling, close-miked, warm room, no drums, no vocals, very sparse, quiet, nostalgic",
+    "bpm": 72,
+    "keyscale": "G Major",
+    "duration_s": 56,
+    "seeds": [
+     501,
+     502,
+     503
+    ],
+    "chosen_seed": 501
+   },
+   {
+    "id": "gold",
+    "start_shot": "s07_first_abol",
+    "purpose": "Opens and lifts as the first cup is poured, then settles for the blessing.",
+    "caption": "Instrumental Ethiopian acoustic score, intimate and tender, solo masenqo playing sparse soft bowed phrases, gentle krar plucking, pentatonic tizita feeling, close-miked, warm room, no drums, no vocals, joined by a breathy washint flute, gently uplifting, resolving peacefully",
+    "bpm": 72,
+    "keyscale": "G Major",
+    "duration_s": 44,
+    "seeds": [
+     601,
+     602,
+     603
+    ],
+    "chosen_seed": 601
+   }
+  ]
+ },
+ "mix": {
+  "target_lufs": -14,
+  "true_peak_db": -1,
+  "narration_lufs": -16,
+  "music_lufs": -22,
+  "duck": {
+   "threshold": 0.02,
+   "ratio": 6,
+   "attack_ms": 300,
+   "release_ms": 1500
+  },
+  "head_pad_s": 0.6,
+  "tail_pad_s": 0.9,
+  "snap_to_beat": true
+ },
+ "end_card": {
+  "duration_s": 3,
+  "lines": [
+   "የጀበናው መጀመሪያ ጭስ",
+   "This film was made with AI.",
+   "Emama Almaz is a fictional character. Pictures, motion, music and voice are generated."
+  ]
+ }
+}

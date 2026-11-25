@@ -1,0 +1,354 @@
+{
+ "version": 1,
+ "title": {
+  "native": "የሙከራ ርዕስ",
+  "en": "Test title"
+ },
+ "language": {
+  "code": "am",
+  "name": "Amharic"
+ },
+ "logline": "Plumbing test.",
+ "audience": "Developers.",
+ "intent": "Prove the stages connect.",
+ "duration_s": {
+  "min": 60,
+  "max": 90
+ },
+ "style_block": "Plain test style.",
+ "characters": [
+  {
+   "id": "hero",
+   "description": "A test figure.",
+   "real_person": false
+  }
+ ],
+ "references": [
+  {
+   "id": "hero_sheet",
+   "kind": "character",
+   "prompt": "Character sheet.",
+   "seed": 1,
+   "characters": [
+    "hero"
+   ]
+  }
+ ],
+ "providers": {
+  "tts": {
+   "model": "gemini-3.8-flash-tts",
+   "voice": "Sulafat",
+   "style": "calm"
+  },
+  "image": {
+   "model": "@cf/black-forest-labs/flux-2-klein-4b",
+   "steps": 4
+  },
+  "video": {
+   "model": "Wan-AI/Wan2.2-TI2V-5B-Diffusers",
+   "long_side": 416,
+   "short_side": 224,
+   "num_frames": 41,
+   "fps": 24,
+   "steps": 30,
+   "guidance": 5.0,
+   "flow_shift": 3.0
+  },
+  "music": {
+   "model": "acestep-v15-turbo",
+   "steps": 8
+  }
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "reason": "Exercises shot 1.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 1.",
+    "seed": 1,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Gentle wind.",
+    "seed": 1,
+    "kenburns": "pan_left"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 1",
+    "subtitle_en": "This is test line 1, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s02",
+   "reason": "Exercises shot 2.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 2.",
+    "seed": 2,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "kenburns",
+    "prompt": "Gentle wind.",
+    "seed": 2,
+    "kenburns": "pull_out"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 2",
+    "subtitle_en": "This is test line 2, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s03",
+   "reason": "Exercises shot 3.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 3.",
+    "seed": 3,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Gentle wind.",
+    "seed": 3,
+    "kenburns": "pan_right"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 3",
+    "subtitle_en": "This is test line 3, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s04",
+   "reason": "Exercises shot 4.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 4.",
+    "seed": 4,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "kenburns",
+    "prompt": "Gentle wind.",
+    "seed": 4,
+    "kenburns": "tilt_up"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 4",
+    "subtitle_en": "This is test line 4, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s05",
+   "reason": "Exercises shot 5.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 5.",
+    "seed": 5,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Gentle wind.",
+    "seed": 5,
+    "kenburns": "tilt_down"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 5",
+    "subtitle_en": "This is test line 5, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s06",
+   "reason": "Exercises shot 6.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 6.",
+    "seed": 6,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "kenburns",
+    "prompt": "Gentle wind.",
+    "seed": 6,
+    "kenburns": "push_in"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 6",
+    "subtitle_en": "This is test line 6, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s07",
+   "reason": "Exercises shot 7.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 7.",
+    "seed": 7,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Gentle wind.",
+    "seed": 7,
+    "kenburns": "pan_left"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 7",
+    "subtitle_en": "This is test line 7, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s08",
+   "reason": "Exercises shot 8.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 8.",
+    "seed": 8,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "kenburns",
+    "prompt": "Gentle wind.",
+    "seed": 8,
+    "kenburns": "pull_out"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 8",
+    "subtitle_en": "This is test line 8, which wraps onto two lines."
+   }
+  },
+  {
+   "id": "s09",
+   "reason": "Exercises shot 9.",
+   "shot_size": "wide",
+   "min_duration_s": 6.5,
+   "keyframe": {
+    "prompt": "Test frame 9.",
+    "seed": 9,
+    "references": [
+     "hero_sheet"
+    ],
+    "characters": [
+     "hero"
+    ]
+   },
+   "motion": {
+    "backend": "wan",
+    "prompt": "Gentle wind.",
+    "seed": 9,
+    "kenburns": "pan_right"
+   },
+   "narration": {
+    "text": "ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። ይህ የሙከራ መስመር ነው። 9",
+    "subtitle_en": "This is test line 9, which wraps onto two lines."
+   }
+  }
+ ],
+ "music": {
+  "cues": [
+   {
+    "id": "open",
+    "start_shot": "s01",
+    "purpose": "Opening.",
+    "caption": "instrumental test",
+    "bpm": 66,
+    "keyscale": "D Major",
+    "duration_s": 12,
+    "seeds": [
+     1,
+     2,
+     3
+    ],
+    "chosen_seed": 1
+   },
+   {
+    "id": "close",
+    "start_shot": "s06",
+    "purpose": "Closing.",
+    "caption": "instrumental test",
+    "bpm": 66,
+    "keyscale": "D Major",
+    "duration_s": 12,
+    "seeds": [
+     4,
+     5
+    ],
+    "chosen_seed": 4
+   }
+  ]
+ },
+ "mix": {
+  "target_lufs": -14,
+  "true_peak_db": -1,
+  "narration_lufs": -16,
+  "music_lufs": -24,
+  "duck": {
+   "threshold": 0.02,
+   "ratio": 6,
+   "attack_ms": 300,
+   "release_ms": 1500
+  },
+  "head_pad_s": 0.5,
+  "tail_pad_s": 0.7,
+  "snap_to_beat": true
+ },
+ "end_card": {
+  "duration_s": 3,
+  "lines": [
+   "የሙከራ ርዕስ",
+   "This film was made with AI.",
+   "Pictures, motion, music and voice are generated."
+  ]
+ }
+}

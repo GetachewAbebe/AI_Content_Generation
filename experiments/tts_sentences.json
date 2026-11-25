@@ -1,0 +1,10 @@
+[
+ {"id":"am1","lang":"am","language":"Amharic","text":"ዛሬ አንድ ታሪክ እነግራችኋለሁ።","native_check":null,"native_rating":null},
+ {"id":"am2","lang":"am","language":"Amharic","text":"እናቴ ጠዋት ቡና ታፈላለች።","native_check":null,"native_rating":null},
+ {"id":"ti1","lang":"ti","language":"Tigrinya","text":"ሎሚ ሓደ ታሪኽ ክነግረኩም እየ።","native_check":null,"native_rating":null},
+ {"id":"ti2","lang":"ti","language":"Tigrinya","text":"ኣደይ ንግሆ ቡን ተፍልሕ።","native_check":null,"native_rating":null},
+ {"id":"so1","lang":"so","language":"Somali","text":"Maanta sheeko ayaan idiin sheegayaa.","native_check":null,"native_rating":null},
+ {"id":"so2","lang":"so","language":"Somali","text":"Hooyaday subaxdii ayay qaxwo karisaa.","native_check":null,"native_rating":null},
+ {"id":"om1","lang":"om","language":"Afaan Oromo","text":"Har'a seenaa tokko isinitti hima.","native_check":null,"native_rating":null},
+ {"id":"om2","lang":"om","language":"Afaan Oromo","text":"Haati koo ganama buna danfisti.","native_check":null,"native_rating":null}
+]

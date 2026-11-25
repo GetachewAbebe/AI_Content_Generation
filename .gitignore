@@ -1,0 +1,17 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+build/
+kaggle.json
+access_token
+story/private/
+# rebuilt from cached media in minutes; everything else under outputs/ is kept for inspection
+outputs/audio/
+outputs/segments/
+outputs/remote/
