@@ -46,8 +46,8 @@ def encode(path: Path, samples: np.ndarray) -> None:
     subprocess.run(command, input=samples.astype("<f4").tobytes(), check=True)
 
 
-def loudness(path: Path) -> dict[str, float]:
-    report = ffmpeg.run("-i", path, "-af", "loudnorm=print_format=json", "-f", "null", "-")
+def loudness(path: Path, af: str = "loudnorm=print_format=json") -> dict[str, float]:
+    report = ffmpeg.run("-i", path, "-af", af, "-f", "null", "-")
     fields = json.loads(report[report.rindex("{") : report.rindex("}") + 1])
     return {k: float(v) for k, v in fields.items() if k != "normalization_type"}
 
@@ -125,13 +125,33 @@ def duck(music_wav: Path, voice_wav: Path, out: Path, settings: Duck) -> None:
 
 def normalise(source: Path, out: Path, target_lufs: float, true_peak_db: float) -> None:
     """Two-pass loudnorm, aimed slightly under the ceiling because AAC encoding overshoots."""
-    m = loudness(source)
+    tp = true_peak_db - AAC_OVERSHOOT_DB
+    m = loudness(source, f"loudnorm=I={target_lufs}:TP={tp}:LRA=11:print_format=json")
     chain = (
-        f"loudnorm=I={target_lufs}:TP={true_peak_db - AAC_OVERSHOOT_DB}:LRA=11"
+        f"loudnorm=I={target_lufs}:TP={tp}:LRA=11"
         f":measured_I={m['input_i']}:measured_TP={m['input_tp']}:measured_LRA={m['input_lra']}"
         f":measured_thresh={m['input_thresh']}:offset={m['target_offset']}:linear=true"
     )
     ffmpeg.run("-i", source, "-af", chain, "-ar", SR, "-ac", 2, "-c:a", "pcm_s16le", out)
+    after = loudness(out, f"loudnorm=I={target_lufs}:TP={tp}:LRA=11:print_format=json")
+    if abs(after["input_i"] - target_lufs) > 0.3:
+        gain = target_lufs - after["input_i"]
+        limit = 10 ** (tp / 20)
+        tmp = out.with_suffix(".tmp.wav")
+        ffmpeg.run(
+            "-i",
+            out,
+            "-af",
+            f"volume={gain:.2f}dB,alimiter=limit={limit:.4f}:level=disabled",
+            "-ar",
+            SR,
+            "-ac",
+            2,
+            "-c:a",
+            "pcm_s16le",
+            tmp,
+        )
+        tmp.replace(out)
 
 
 def _rms_db(samples: np.ndarray) -> float:

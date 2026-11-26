@@ -52,7 +52,7 @@ def parent():
         check=True,
     )
     me = [sys.executable, __file__, SRC, DST]
-    subprocess.run(me + ["encode"], check=True, env={**os.environ, "CUDA_VISIBLE_DEVICES": "0"})
+    subprocess.run(me + ["encode"], check=True)
     import torch
 
     n = max(1, torch.cuda.device_count())
@@ -73,15 +73,19 @@ def parent():
 def encode():
     import torch
     from diffusers import WanPipeline
+    from transformers import UMT5EncoderModel
 
     t = time.time()
+    te = UMT5EncoderModel.from_pretrained(
+        JOBS[0]["model"], subfolder="text_encoder", torch_dtype=torch.bfloat16, device_map="balanced"
+    )
     pipe = WanPipeline.from_pretrained(
-        JOBS[0]["model"], transformer=None, vae=None, torch_dtype=torch.bfloat16
+        JOBS[0]["model"], text_encoder=te, transformer=None, vae=None, torch_dtype=torch.bfloat16
     )
     out = {}
     for s in {j["prompt"] for j in JOBS} | {j["negative_prompt"] for j in JOBS}:
         e, _ = pipe.encode_prompt(
-            s, do_classifier_free_guidance=False, max_sequence_length=512, device="cpu"
+            s, do_classifier_free_guidance=False, max_sequence_length=512, device="cuda:0"
         )
         out[s] = e.float().cpu()
     torch.save(out, EMB)

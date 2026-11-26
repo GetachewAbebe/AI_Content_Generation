@@ -1,0 +1,227 @@
+{
+ "shots": [
+  {
+   "id": "s01_dawn_city",
+   "start": 0.0,
+   "end": 8.333333333333334,
+   "speech_start": 0.4,
+   "speech_s": 7.36
+  },
+  {
+   "id": "s02_fanning_embers",
+   "start": 8.333333333333334,
+   "end": 17.5,
+   "speech_start": 8.733333333333334,
+   "speech_s": 7.8
+  },
+  {
+   "id": "s03_roasting_beans",
+   "start": 17.5,
+   "end": 26.666666666666668,
+   "speech_start": 17.9,
+   "speech_s": 7.58
+  },
+  {
+   "id": "s04_wafting_smoke",
+   "start": 26.666666666666668,
+   "end": 35.833333333333336,
+   "speech_start": 27.066666666666666,
+   "speech_s": 8.15
+  },
+  {
+   "id": "s05_mortar",
+   "start": 35.833333333333336,
+   "end": 45.0,
+   "speech_start": 36.233333333333334,
+   "speech_s": 7.61
+  },
+  {
+   "id": "s06_jebena_on_fire",
+   "start": 45.0,
+   "end": 53.333333333333336,
+   "speech_start": 45.4,
+   "speech_s": 5.46
+  },
+  {
+   "id": "s07_first_abol",
+   "start": 53.333333333333336,
+   "end": 64.16666666666667,
+   "speech_start": 53.733333333333334,
+   "speech_s": 9.24
+  },
+  {
+   "id": "s08_cup_and_photo",
+   "start": 64.16666666666667,
+   "end": 72.5,
+   "speech_start": 64.56666666666668,
+   "speech_s": 7.25
+  },
+  {
+   "id": "s09_emama_smile",
+   "start": 72.5,
+   "end": 80.83333333333333,
+   "speech_start": 72.9,
+   "speech_s": 5.29
+  },
+  {
+   "id": "s10_last_steam",
+   "start": 80.83333333333333,
+   "end": 85.83333333333333,
+   "speech_start": null,
+   "speech_s": 0.0
+  }
+ ],
+ "subtitles": [
+  {
+   "shot": "s01_dawn_city",
+   "start": 0.4,
+   "end": 6.991,
+   "lines": [
+    "Before the city wakes, before the",
+    "darkness lifts, one light turns on first"
+   ]
+  },
+  {
+   "shot": "s01_dawn_city",
+   "start": 6.991,
+   "end": 8.06,
+   "lines": [
+    "in our home."
+   ]
+  },
+  {
+   "shot": "s02_fanning_embers",
+   "start": 8.733,
+   "end": 15.377,
+   "lines": [
+    "It is Emama. Fanning the embers, she",
+    "welcomes the day with prayer and the"
+   ]
+  },
+  {
+   "shot": "s02_fanning_embers",
+   "start": 15.377,
+   "end": 16.833,
+   "lines": [
+    "scent of coffee."
+   ]
+  },
+  {
+   "shot": "s03_roasting_beans",
+   "start": 17.9,
+   "end": 24.718,
+   "lines": [
+    "As the green beans roast on the iron",
+    "pan, the silence of the house fills with"
+   ]
+  },
+  {
+   "shot": "s03_roasting_beans",
+   "start": 24.718,
+   "end": 25.78,
+   "lines": [
+    "sweet aroma."
+   ]
+  },
+  {
+   "shot": "s04_wafting_smoke",
+   "start": 27.067,
+   "end": 33.252,
+   "lines": [
+    "Drawing the smoke toward her, she",
+    "whispers “Thank God”—for the new day,"
+   ]
+  },
+  {
+   "shot": "s04_wafting_smoke",
+   "start": 33.252,
+   "end": 35.517,
+   "lines": [
+    "for her children's health."
+   ]
+  },
+  {
+   "shot": "s05_mortar",
+   "start": 36.233,
+   "end": 42.94,
+   "lines": [
+    "The rhythm of the mortar is our home's",
+    "morning clock—the melody of love ground"
+   ]
+  },
+  {
+   "shot": "s05_mortar",
+   "start": 42.94,
+   "end": 44.143,
+   "lines": [
+    "with patience."
+   ]
+  },
+  {
+   "shot": "s06_jebena_on_fire",
+   "start": 45.4,
+   "end": 50.686,
+   "lines": [
+    "As the jebena settles onto the fire, the",
+    "morning sun slips quietly through the"
+   ]
+  },
+  {
+   "shot": "s06_jebena_on_fire",
+   "start": 50.686,
+   "end": 51.16,
+   "lines": [
+    "window."
+   ]
+  },
+  {
+   "shot": "s07_first_abol",
+   "start": 53.733,
+   "end": 61.521,
+   "lines": [
+    "When the first Abol is poured, the cups",
+    "fill—one for the house, the rest for her"
+   ]
+  },
+  {
+   "shot": "s07_first_abol",
+   "start": 61.521,
+   "end": 63.273,
+   "lines": [
+    "children far away."
+   ]
+  },
+  {
+   "shot": "s08_cup_and_photo",
+   "start": 64.567,
+   "end": 70.386,
+   "lines": [
+    "Though distance separates us, inside",
+    "this single cup of coffee, a mother's"
+   ]
+  },
+  {
+   "shot": "s08_cup_and_photo",
+   "start": 70.386,
+   "end": 72.117,
+   "lines": [
+    "love always unites us."
+   ]
+  },
+  {
+   "shot": "s09_emama_smile",
+   "start": 72.9,
+   "end": 78.49,
+   "lines": [
+    "Coffee can be warmed again when it",
+    "cools; a mother's love never grows cold."
+   ]
+  }
+ ],
+ "cue_starts": {
+  "blue_hour": 0.0,
+  "gold": 53.333333333333336
+ },
+ "picture_end": 85.83333333333333,
+ "total": 88.83333333333333
+}

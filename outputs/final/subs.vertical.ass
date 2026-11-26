@@ -1,0 +1,31 @@
+[Script Info]
+ScriptType: v4.00+
+PlayResX: 1080
+PlayResY: 1920
+WrapStyle: 2
+
+[V4+ Styles]
+Format: Name,Fontname,Fontsize,PrimaryColour,OutlineColour,BackColour,Bold,BorderStyle,Outline,Shadow,Alignment,MarginL,MarginR,MarginV
+Style: Sub,Noto Sans,56,&H00FFFFFF,&H00101010,&H80000000,0,1,3,1,2,40,40,384
+Style: Title,Noto Sans Ethiopic,96,&H00E8F2FA,&H00101010,&H80000000,-1,1,3,1,8,60,60,307
+
+[Events]
+Format: Layer,Start,End,Style,Name,MarginL,MarginR,MarginV,Effect,Text
+Dialogue: 0,0:00:00.50,0:00:03.60,Title,,0,0,0,,{\fad(500,500)}የጀበናው መጀመሪያ ጭስ\N{\fnNoto Sans\fs48}The First Smoke of the Jebena
+Dialogue: 0,0:00:00.40,0:00:06.99,Sub,,0,0,0,,Before the city wakes, before the\Ndarkness lifts, one light turns on first
+Dialogue: 0,0:00:06.99,0:00:08.06,Sub,,0,0,0,,in our home.
+Dialogue: 0,0:00:08.73,0:00:15.38,Sub,,0,0,0,,It is Emama. Fanning the embers, she\Nwelcomes the day with prayer and the
+Dialogue: 0,0:00:15.38,0:00:16.83,Sub,,0,0,0,,scent of coffee.
+Dialogue: 0,0:00:17.90,0:00:24.72,Sub,,0,0,0,,As the green beans roast on the iron\Npan, the silence of the house fills with
+Dialogue: 0,0:00:24.72,0:00:25.78,Sub,,0,0,0,,sweet aroma.
+Dialogue: 0,0:00:27.07,0:00:33.25,Sub,,0,0,0,,Drawing the smoke toward her, she\Nwhispers “Thank God”—for the new day,
+Dialogue: 0,0:00:33.25,0:00:35.52,Sub,,0,0,0,,for her children's health.
+Dialogue: 0,0:00:36.23,0:00:42.94,Sub,,0,0,0,,The rhythm of the mortar is our home's\Nmorning clock—the melody of love ground
+Dialogue: 0,0:00:42.94,0:00:44.14,Sub,,0,0,0,,with patience.
+Dialogue: 0,0:00:45.40,0:00:50.69,Sub,,0,0,0,,As the jebena settles onto the fire, the\Nmorning sun slips quietly through the
+Dialogue: 0,0:00:50.69,0:00:51.16,Sub,,0,0,0,,window.
+Dialogue: 0,0:00:53.73,0:01:01.52,Sub,,0,0,0,,When the first Abol is poured, the cups\Nfill—one for the house, the rest for her
+Dialogue: 0,0:01:01.52,0:01:03.27,Sub,,0,0,0,,children far away.
+Dialogue: 0,0:01:04.57,0:01:10.39,Sub,,0,0,0,,Though distance separates us, inside\Nthis single cup of coffee, a mother's
+Dialogue: 0,0:01:10.39,0:01:12.12,Sub,,0,0,0,,love always unites us.
+Dialogue: 0,0:01:12.90,0:01:18.49,Sub,,0,0,0,,Coffee can be warmed again when it\Ncools; a mother's love never grows cold.

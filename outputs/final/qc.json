@@ -1,0 +1,140 @@
+{
+ "checks": [
+  {
+   "check": "vertical: duration 60-90 s",
+   "ok": true,
+   "detail": 88.83
+  },
+  {
+   "check": "vertical: size",
+   "ok": true,
+   "detail": [
+    1080,
+    1920
+   ]
+  },
+  {
+   "check": "vertical: H.264, AAC, 24 fps",
+   "ok": true,
+   "detail": [
+    "h264",
+    "aac",
+    "24/1"
+   ]
+  },
+  {
+   "check": "vertical: loudness near -14 LUFS",
+   "ok": true,
+   "detail": -14.03
+  },
+  {
+   "check": "vertical: true peak under -1 dB",
+   "ok": true,
+   "detail": -1.33
+  },
+  {
+   "check": "horizontal: duration 60-90 s",
+   "ok": true,
+   "detail": 88.83
+  },
+  {
+   "check": "horizontal: size",
+   "ok": true,
+   "detail": [
+    1920,
+    1080
+   ]
+  },
+  {
+   "check": "horizontal: H.264, AAC, 24 fps",
+   "ok": true,
+   "detail": [
+    "h264",
+    "aac",
+    "24/1"
+   ]
+  },
+  {
+   "check": "horizontal: loudness near -14 LUFS",
+   "ok": true,
+   "detail": -14.03
+  },
+  {
+   "check": "horizontal: true peak under -1 dB",
+   "ok": true,
+   "detail": -1.33
+  },
+  {
+   "check": "subtitles: at most 2 lines of 40 characters",
+   "ok": true,
+   "detail": 17
+  },
+  {
+   "check": "subtitles: at most 20 characters per second",
+   "ok": true,
+   "detail": 14.8
+  },
+  {
+   "check": "score ducked at least 3 dB under speech",
+   "ok": true,
+   "detail": -16.18
+  },
+  {
+   "check": "original score in place",
+   "ok": true,
+   "detail": []
+  }
+ ],
+ "mix": {
+  "placeholder_cues": [],
+  "duck_under_speech_db": -16.18,
+  "duck_in_gaps_db": -2.34,
+  "voice_over_music_db": 20.87
+ },
+ "shot_sources": {
+  "s01_dawn_city.vertical": "kenburns",
+  "s01_dawn_city.horizontal": "kenburns",
+  "s02_fanning_embers.vertical": "kenburns",
+  "s02_fanning_embers.horizontal": "kenburns",
+  "s03_roasting_beans.vertical": "kenburns",
+  "s03_roasting_beans.horizontal": "kenburns",
+  "s04_wafting_smoke.vertical": "kenburns",
+  "s04_wafting_smoke.horizontal": "kenburns",
+  "s05_mortar.vertical": "kenburns",
+  "s05_mortar.horizontal": "kenburns",
+  "s06_jebena_on_fire.vertical": "kenburns",
+  "s06_jebena_on_fire.horizontal": "kenburns",
+  "s07_first_abol.vertical": "kenburns",
+  "s07_first_abol.horizontal": "kenburns",
+  "s08_cup_and_photo.vertical": "kenburns",
+  "s08_cup_and_photo.horizontal": "kenburns",
+  "s09_emama_smile.vertical": "kenburns",
+  "s09_emama_smile.horizontal": "kenburns",
+  "s10_last_steam.vertical": "kenburns",
+  "s10_last_steam.horizontal": "kenburns"
+ },
+ "files": {
+  "vertical": {
+   "duration_s": 88.833,
+   "size": [
+    1080,
+    1920
+   ],
+   "lufs": -14.03,
+   "true_peak_db": -1.33,
+   "bytes": 38938886,
+   "sha256": "67ae13cd78ec0e82cf1929ea5b8160a25563c0f282549e9769bf6349f4a0b295"
+  },
+  "horizontal": {
+   "duration_s": 88.833,
+   "size": [
+    1920,
+    1080
+   ],
+   "lufs": -14.03,
+   "true_peak_db": -1.33,
+   "bytes": 33728000,
+   "sha256": "7eddb8fa60ccbea7292ea6107127b9c3cff4cfcdd3a7bbba573da8833ddba89b"
+  }
+ }
+}
