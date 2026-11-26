@@ -1,0 +1,20 @@
+{
+ "input_hash": "ae145aaee8ef0e4f86d2c479c3f92080f25fdbe3f3f9387493d49c66308616b9",
+ "output_sha256": "74481aed39d74d8d70e6c358400d4f185a5cc16d8f73148babe1dd512f19150a",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Wide shot of an empty small modest Addis Ababa kitchen, no people, nobody in frame, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor in full golden morning light, the black jebena on its brazier in the centre with steam rising, empty stool, small filled cups waiting on the tray, full bleed, no border. Vertical 9:16 composition, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7010,
+  "size": [
+   720,
+   1280
+  ],
+  "references": [
+   "8912942161a159b2cec0747938a2d90328d251bffbe95c02844478ed8fe85542",
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

@@ -1,0 +1,20 @@
+{
+ "input_hash": "51c73ba3e9098b6ecd6ebfc74d1b5caf41a7e6275e323ef98584b8b9bfca7501",
+ "output_sha256": "622ff71986ebc4a38a694c5b549aa76639fe05916129e6ab92090f642852e003",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Close-up of a worn wooden mortar filled with dark roasted coffee, a wooden pestle resting inside it held by two aged brown hands, fine dust in the air, pale blue first light just touching the rim. Vertical 9:16 composition, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7005,
+  "size": [
+   720,
+   1280
+  ],
+  "references": [
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb",
+   "8912942161a159b2cec0747938a2d90328d251bffbe95c02844478ed8fe85542"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

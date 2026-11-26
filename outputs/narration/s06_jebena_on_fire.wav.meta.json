@@ -1,0 +1,13 @@
+{
+ "input_hash": "07a63f4ca04829f053e0ba8ed2ddba981697dd1f8edff002ba4ed098ef1589db",
+ "output_sha256": "137aef35143a060fc79a23a03872475c3bc8b82aa81767ace73043fb7dfe38fd",
+ "inputs": {
+  "stage": "narration",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone",
+  "text": "ጀበናው እሳቱ ላይ ሲጣድ፣ የጠዋት ፀሐይ በመስኮቱ በኩል ቀስ ብላ ትገባለች።",
+  "take": 1
+ },
+ "run_id": "20261126T155707-377c"
+}

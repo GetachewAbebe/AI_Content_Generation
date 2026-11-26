@@ -1,0 +1,21 @@
+{
+ "input_hash": "31ba150971eb142c860cddc82df5d2c88b479c6104eeea21c06dd2056465cd26",
+ "output_sha256": "5b48afd764bd100f59c29828ef69580531502b8417ff88233fc71d224a94ffb8",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. A traditional round-bottomed black clay Ethiopian jebena coffee pot with a tall narrow neck sits directly on a glowing clay charcoal brazier on the floor, her hands just releasing its clay neck, the first golden sunrise rays break through the window and cross the room, full bleed, no border. Emama Almaz: an Ethiopian grandmother in her late sixties, warm brown skin, oval face, soft deep smile lines, calm dark eyes, silver-grey hair parted in the centre and covered by a white cotton netela shawl with a thin woven green, gold and red border, long white handwoven habesha kemis dress, small silver stud earrings. Vertical 9:16 composition, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7006,
+  "size": [
+   720,
+   1280
+  ],
+  "references": [
+   "e2e2ffe38a2105b4e713dff461b93125db62f0a34336717e30d37b178aa0e13b",
+   "8912942161a159b2cec0747938a2d90328d251bffbe95c02844478ed8fe85542",
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

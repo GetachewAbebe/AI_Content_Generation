@@ -1,0 +1,20 @@
+{
+ "input_hash": "3252c3d73d2dfe678eaf4ffb59da2610c04331fbeb6acaeff72c1f16b9fd4732",
+ "output_sha256": "fc68ee3d37287a46512ec67abb731cfd3fd53a4a8c254d799b283d89dea33385",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Close-up of one steaming white cini cup on a wooden table, beside it an old wooden picture frame angled away and out of focus so no face can be read, warm golden light. Vertical 9:16 composition, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7008,
+  "size": [
+   720,
+   1280
+  ],
+  "references": [
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb",
+   "8912942161a159b2cec0747938a2d90328d251bffbe95c02844478ed8fe85542"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

@@ -1,0 +1,13 @@
+{
+ "input_hash": "07c8172a18de63f2979b9005baf45b9dbd1010dc08f0b0d7f81b849cf1856e5b",
+ "output_sha256": "6edfe4ae30ec5afe6c5c6f9dd914399c5aa1957fb3b67bf68f4ff4e4dc46e124",
+ "inputs": {
+  "stage": "narration",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone",
+  "text": "አረንጓዴው ቡና በብረት መቁያ ላይ ሲታመስ፣ የቤቱ ዝምታ በሚጣፍጥ መዓዛ ይሞላል።",
+  "take": 1
+ },
+ "run_id": "20261126T155707-377c"
+}

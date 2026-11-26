@@ -1,0 +1,26 @@
+{
+ "input_hash": "371d0f23f2c17157d13f6062052f3dc63115fb96559009504e246ef345c82d6e",
+ "output_sha256": "816003e9e6e5c227a2bcb2f43581831077698be4e9b47f4269af9960f4d1c6ab",
+ "inputs": {
+  "name": "gold.602",
+  "cue": "gold",
+  "model": "acestep-v15-turbo",
+  "steps": 8,
+  "caption": "Instrumental Ethiopian acoustic score, intimate and tender, solo masenqo playing sparse soft bowed phrases, gentle krar plucking, pentatonic tizita feeling, close-miked, warm room, no drums, no vocals, joined by a breathy washint flute, gently uplifting, resolving peacefully",
+  "bpm": 72,
+  "keyscale": "G Major",
+  "duration_s": 44,
+  "seed": 602
+ },
+ "provider": "gpu",
+ "stage": "music",
+ "actual": {
+  "event": "track",
+  "name": "gold.602",
+  "seconds": 4.0,
+  "ok": true,
+  "error": null,
+  "seed": 602,
+  "gpu": "T4"
+ }
+}

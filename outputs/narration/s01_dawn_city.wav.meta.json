@@ -1,0 +1,13 @@
+{
+ "input_hash": "afa7a1b938ea2ef9ea5852abe8d6afcf2d7ede67844664f8e3143f2af46967d6",
+ "output_sha256": "dfdf5922519f4b8faf85a73ad6398660d13781f252fdc0f64dd87719ffa0b455",
+ "inputs": {
+  "stage": "narration",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone",
+  "text": "ከተማዋ ገና ሳትነቃ፣ ጨለማው ገና ሳይገፈፍ፣ በቤታችን ውስጥ አንድ ብርሃን ቀድሞ ይበራል።",
+  "take": 1
+ },
+ "run_id": "20261126T155707-377c"
+}

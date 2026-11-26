@@ -1,0 +1,19 @@
+{
+ "input_hash": "d3c742ebcffa66b2b9f9b6546e6fb8f26a680d7fe7293c610571407d2b6b57af",
+ "output_sha256": "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb",
+ "inputs": {
+  "stage": "reference",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Object reference sheet on a plain warm background, no people: round black clay jebena with long neck and straw stopper, small white handleless cini cups, clay charcoal brazier, round dark iron roasting pan, wooden mortar and pestle. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 4102,
+  "size": [
+   1024,
+   1024
+  ],
+  "references": [
+   "e2e2ffe38a2105b4e713dff461b93125db62f0a34336717e30d37b178aa0e13b"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

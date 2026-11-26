@@ -31,7 +31,7 @@
    "characters": [
     "emama"
    ],
-   "prompt": "Character reference sheet on a plain warm background: the same woman three times, front view, three-quarter view and a calm close-up of her face."
+   "prompt": "Single portrait on a plain warm background, full bleed, no border, no collage: one Ethiopian grandmother facing slightly three-quarter toward camera, calm expression, waist-up."
   },
   {
    "id": "coffee_set",
@@ -46,10 +46,8 @@
    "id": "kitchen",
    "kind": "place",
    "seed": 4103,
-   "references": [
-    "emama_sheet"
-   ],
-   "prompt": "Empty location reference, no people: small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor, clay brazier in the middle, dim blue light before dawn."
+   "references": [],
+   "prompt": "Empty location reference, no people, full bleed, no border: small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor, clay brazier in the middle, dim blue light before dawn."
   }
  ],
  "providers": {
@@ -84,11 +82,9 @@
    "shot_size": "extreme_wide",
    "min_duration_s": 7,
    "keyframe": {
-    "prompt": "Extreme wide view before dawn over a quiet Addis Ababa hillside neighbourhood of small tin-roofed houses, deep blue light, soft mist, a single warm amber window glowing in the centre.",
+    "prompt": "Extreme wide view before dawn over a quiet Addis Ababa hillside neighbourhood of small tin-roofed houses, deep blue light, soft mist, a single warm amber window glowing in the centre, full bleed, no border.",
     "seed": 7001,
-    "references": [
-     "kitchen"
-    ],
+    "references": [],
     "characters": []
    },
    "motion": {
@@ -109,7 +105,7 @@
    "shot_size": "medium",
    "min_duration_s": 8,
    "keyframe": {
-    "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor, still blue before dawn. She kneels beside a small clay charcoal brazier and fans the glowing embers with a woven straw fan, face lit orange from below.",
+    "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor, still blue before dawn. She kneels low on the floor beside a small clay charcoal brazier, leaning forward to fan the glowing embers with a woven straw fan held in her hand, face lit orange from below, full bleed, no border.",
     "seed": 7002,
     "references": [
      "emama_sheet",
@@ -163,7 +159,7 @@
    "shot_size": "medium_close_up",
    "min_duration_s": 7,
    "keyframe": {
-    "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. She holds a smoking roasting pan low in front of her with one hand and draws the smoke toward her face with the other, eyes closed in peace, dim blue window behind her.",
+    "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. She holds a smoking iron roasting pan in her left hand and waves her open right hand through the rising smoke toward her face, eyes closed in peace, dim blue window behind her, full bleed, no border.",
     "seed": 7004,
     "references": [
      "emama_sheet",
@@ -218,7 +214,7 @@
    "shot_size": "medium",
    "min_duration_s": 8,
    "keyframe": {
-    "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. A black clay jebena coffee pot sits on the glowing charcoal brazier, her hands just leaving its handle, the first golden sunrise rays break through the window and cross the room.",
+    "prompt": "Medium shot in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. A traditional round-bottomed black clay Ethiopian jebena coffee pot with a tall narrow neck sits directly on a glowing clay charcoal brazier on the floor, her hands just releasing its clay neck, the first golden sunrise rays break through the window and cross the room, full bleed, no border.",
     "seed": 7006,
     "references": [
      "emama_sheet",
@@ -298,7 +294,7 @@
    "shot_size": "medium_close_up",
    "min_duration_s": 8,
    "keyframe": {
-    "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor full of golden morning light. She holds a warm cini cup in both hands and looks softly toward the camera with a gentle knowing smile.",
+    "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor full of golden morning light. Single person only: she holds a warm cini cup in both hands and looks softly toward the camera with a gentle knowing smile, full bleed, no border, no inset.",
     "seed": 7009,
     "references": [
      "emama_sheet",
@@ -325,9 +321,9 @@
    "id": "s10_last_steam",
    "reason": "Her blessing over an empty room: the love stays after she leaves the frame.",
    "shot_size": "wide",
-   "min_duration_s": 7,
+   "min_duration_s": 5,
    "keyframe": {
-    "prompt": "Wide shot of a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor in full golden morning light, the black jebena on its brazier in the centre with steam rising, empty stool, small filled cups waiting on the tray, nobody in frame.",
+    "prompt": "Wide shot of an empty small modest Addis Ababa kitchen, no people, nobody in frame, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor in full golden morning light, the black jebena on its brazier in the centre with steam rising, empty stool, small filled cups waiting on the tray, full bleed, no border.",
     "seed": 7010,
     "references": [
      "kitchen",
@@ -343,9 +339,8 @@
     "why_backend": "Steam only."
    },
    "narration": {
-    "text": "መልካም ቀን፣ ልጆቼ።",
-    "subtitle_en": "Have a blessed day, my children.",
-    "style": "an elderly mother speaking softly and tenderly to her own children, unhurried, smiling"
+    "text": "",
+    "subtitle_en": ""
    }
   }
  ],
@@ -394,8 +389,8 @@
    "attack_ms": 300,
    "release_ms": 1500
   },
-  "head_pad_s": 0.6,
-  "tail_pad_s": 0.9,
+  "head_pad_s": 0.4,
+  "tail_pad_s": 0.5,
   "snap_to_beat": true
  },
  "end_card": {

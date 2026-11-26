@@ -78,11 +78,10 @@ def encode():
     pipe = WanPipeline.from_pretrained(
         JOBS[0]["model"], transformer=None, vae=None, torch_dtype=torch.bfloat16
     )
-    pipe.text_encoder.to("cuda")
     out = {}
     for s in {j["prompt"] for j in JOBS} | {j["negative_prompt"] for j in JOBS}:
         e, _ = pipe.encode_prompt(
-            s, do_classifier_free_guidance=False, max_sequence_length=512, device="cuda"
+            s, do_classifier_free_guidance=False, max_sequence_length=512, device="cpu"
         )
         out[s] = e.float().cpu()
     torch.save(out, EMB)

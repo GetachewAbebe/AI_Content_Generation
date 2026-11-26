@@ -1,0 +1,26 @@
+{
+ "input_hash": "ecc8fc13975d466daa58272b12c13dd9e4d7f964201110cda64df86832789108",
+ "output_sha256": "656d36d68ef4f7dcbd7ebd0d88025d4156bb9eb17311481faa6d53fd1fbcbbd8",
+ "inputs": {
+  "name": "blue_hour.502",
+  "cue": "blue_hour",
+  "model": "acestep-v15-turbo",
+  "steps": 8,
+  "caption": "Instrumental Ethiopian acoustic score, intimate and tender, solo masenqo playing sparse soft bowed phrases, gentle krar plucking, pentatonic tizita feeling, close-miked, warm room, no drums, no vocals, very sparse, quiet, nostalgic",
+  "bpm": 72,
+  "keyscale": "G Major",
+  "duration_s": 56,
+  "seed": 502
+ },
+ "provider": "gpu",
+ "stage": "music",
+ "actual": {
+  "event": "track",
+  "name": "blue_hour.502",
+  "seconds": 6.4,
+  "ok": true,
+  "error": null,
+  "seed": 502,
+  "gpu": "T4"
+ }
+}

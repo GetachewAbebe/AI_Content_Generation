@@ -1,0 +1,13 @@
+{
+ "input_hash": "4b6b87eb04bdcaedc275f9b33ae1bba42d3cbc789cf9b955ea70fee89dc77ee2",
+ "output_sha256": "b469edef54ec12791e6af51a68532249d826e34c0c83b39fb2c7c2aa4931efca",
+ "inputs": {
+  "stage": "narration",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone",
+  "text": "የመጀመሪያው አቦል ሲቀዳ፣ ስኒዎቹ ይሞላሉ—አንዱ ለቤቱ፣ ሌሎቹ ግን በሩቅ ላሉ ልጆቿ።",
+  "take": 1
+ },
+ "run_id": "20261126T155707-377c"
+}

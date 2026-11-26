@@ -1,0 +1,13 @@
+{
+ "input_hash": "14f8f3bb92f101da35a061106c6b36bdef44a8b35222d645cd8adb2204287ac9",
+ "output_sha256": "b88296c86dbb0fac51c876376d01e746df47dd4d0eb2a5040308fd74ea4e8a38",
+ "inputs": {
+  "stage": "narration",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone",
+  "text": "ርቀት ቢለየንም፣ በዚህች አንድ ስኒ ቡና ውስጥ የእናት ፍቅር ሁሌም ያገናኘናል።",
+  "take": 1
+ },
+ "run_id": "20261126T155707-377c"
+}

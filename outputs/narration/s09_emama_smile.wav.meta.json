@@ -1,0 +1,13 @@
+{
+ "input_hash": "e08c0301d14b66c48e645440f9c8e1576ca6bfd19aaa71d0cab1e3d7201cbb61",
+ "output_sha256": "e1300798f0837914f9c7e2c0c01b52b2893bc99e7a5fa38853c3f6816306a200",
+ "inputs": {
+  "stage": "narration",
+  "model": "gemini-3.8-flash-tts",
+  "voice": "Sulafat",
+  "style": "a grown grandchild remembering, calm, warm, unhurried, close to the microphone",
+  "text": "ቡናው ሲቀዘቅዝ ይታደሳል፤ የእናት ፍቅር ግን መቼም አይቀዘቅዝም።",
+  "take": 1
+ },
+ "run_id": "20261126T155707-377c"
+}

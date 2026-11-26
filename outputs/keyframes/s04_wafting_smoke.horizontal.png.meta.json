@@ -1,0 +1,22 @@
+{
+ "input_hash": "8c6c60482b8585d1f8b9775219d0b3eaef3e9c275dfc362bd825bb1cf63d347b",
+ "output_sha256": "bedbb1f969316a63ffbc740d56a032c31983732b8dbecd5f9cdbd2d45afb2703",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Medium close-up in a small modest Addis Ababa kitchen, plastered clay-coloured walls, one wooden window on the left, low wooden stool, fresh grass scattered on the floor. She holds a smoking iron roasting pan in her left hand and waves her open right hand through the rising smoke toward her face, eyes closed in peace, dim blue window behind her, full bleed, no border. Emama Almaz: an Ethiopian grandmother in her late sixties, warm brown skin, oval face, soft deep smile lines, calm dark eyes, silver-grey hair parted in the centre and covered by a white cotton netela shawl with a thin woven green, gold and red border, long white handwoven habesha kemis dress, small silver stud earrings. Horizontal 16:9 composition of the same scene, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7004,
+  "size": [
+   1280,
+   720
+  ],
+  "references": [
+   "72fc47d4536fab0566d56da77bea47844eb51a191dab0acb790cff482c11fd73",
+   "e2e2ffe38a2105b4e713dff461b93125db62f0a34336717e30d37b178aa0e13b",
+   "8912942161a159b2cec0747938a2d90328d251bffbe95c02844478ed8fe85542",
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

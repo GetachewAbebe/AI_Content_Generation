@@ -1,0 +1,19 @@
+{
+ "input_hash": "4d5595f44da9f375ed6626022ba0b927fd2968188a2b197bf4e81bee86441880",
+ "output_sha256": "d1cc7e242955ca1d04fc7e93f85e69e5955c707eae87315aa849add3e08acc39",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Close-up of coffee beans in a round dark iron roasting pan over glowing charcoal, some still green, most turning glossy brown, thin smoke curling up, lit only by ember glow. Vertical 9:16 composition, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7003,
+  "size": [
+   720,
+   1280
+  ],
+  "references": [
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}

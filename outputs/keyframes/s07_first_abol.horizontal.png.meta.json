@@ -1,0 +1,20 @@
+{
+ "input_hash": "27dc4e5027117c3969d49f611c19721a971c2e299a4ae78c25430be65b9aa478",
+ "output_sha256": "e9f5ff563015f8f11205cac92b72c0da1e6b1535b7d35596f239a024a9c7f013",
+ "inputs": {
+  "stage": "keyframe",
+  "model": "@cf/black-forest-labs/flux-2-klein-4b",
+  "steps": 4,
+  "prompt": "Close-up of a black clay jebena pouring a thin steady stream of dark coffee into one small white handleless cini cup on a low wooden tray with several other cini cups, steam rising, golden morning light. Horizontal 16:9 composition of the same scene, main subject centred. Hand-painted gouache animation still, visible soft brush texture, gentle paper grain, muted indigo shadows and warm amber highlights, quiet intimate mood, shallow depth of field, modest Ethiopian home. No text, no lettering, no watermark.",
+  "seed": 7007,
+  "size": [
+   1280,
+   720
+  ],
+  "references": [
+   "b9df1d3f3b98c45207e6384364431101234ed6b5a92971967b766af5f6887837",
+   "e40261f2b01ff5ed2bbc2bdfdab86a038db18d3768c6ad853cabeae99339f2fb"
+  ]
+ },
+ "run_id": "20261126T161542-1664"
+}
